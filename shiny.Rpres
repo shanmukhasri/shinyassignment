@@ -1,0 +1,41 @@
+Peer-graded Assignment: Course Project: Shiny Application and Reproducible Pitch
+========================================================
+author: K.S.S Siva Teja 
+date: 24 july 2017
+autosize: true
+
+Overview
+========================================================
+
+This was built as part of a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization.
+
+The app developed for the first part of the assignment demo is avalilable at: https://b33lie.shinyapps.io/shiny_app_mtcars/
+
+Source code for ui.R and server.R files are available on the GitHub repo: https://github.com/b33lie/shiny_app_mtcars/
+
+Description
+========================================================
+
+This famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica.
+
+Functionality
+========================================================
+
+This application demonstrates relation between sepal Length,width and petal Length,weight with respect to each other
+
+the x axis contains one of the sepal length,width or petal length,width
+
+the x and y axis shows the relation between them
+
+Summary of the data
+========================================================
+
+```{r cache=TRUE}
+summary(iris)
+```
+
+Basic plot
+========================================================
+```{r cache=TRUE}
+plot(iris$Petal.Length, iris$Petal.Width, main="Iris Data")
+```
